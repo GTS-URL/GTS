@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekatva Public School</title>
+    <meta
+      name="description"
+      content="Ekatva Public School - A beautiful and user-friendly academic website."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Ekatva Public School</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#academics">Academics</a>
+          <a href="#admissions">Admissions</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">Welcome to</p>
+          <h1>Ekatva Public School</h1>
+          <p>
+            Nurturing knowledge, character, and excellence through a classic,
+            student-focused learning environment.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#admissions">Apply for Admission</a>
+            <a class="btn" href="#about">Explore More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            We are committed to holistic education with a balance of academics,
+            discipline, co-curricular excellence, and values. Our school creates
+            a safe and engaging environment where every child can thrive.
+          </p>
+          <div class="grid three">
+            <article class="card">
+              <h3>Our Vision</h3>
+              <p>To inspire lifelong learners and responsible global citizens.</p>
+            </article>
+            <article class="card">
+              <h3>Our Mission</h3>
+              <p>
+                Deliver quality education with strong moral foundations and
+                modern pedagogy.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Our Values</h3>
+              <p>Integrity, respect, excellence, and compassion in action.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="academics" class="section alt">
+        <div class="container">
+          <h2>Academics</h2>
+          <div class="grid three">
+            <article class="card">
+              <h3>Primary School</h3>
+              <p>Strong fundamentals with activity-based learning approach.</p>
+            </article>
+            <article class="card">
+              <h3>Middle School</h3>
+              <p>Concept-driven curriculum and practical skill development.</p>
+            </article>
+            <article class="card">
+              <h3>Senior School</h3>
+              <p>Exam readiness, critical thinking, and career orientation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="admissions" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Admissions</h2>
+            <p>
+              Admissions are open for the current academic session. Fill out the
+              enquiry form and our admissions team will connect with you.
+            </p>
+            <ul>
+              <li>Transparent admission process</li>
+              <li>Merit and values-based culture</li>
+              <li>Experienced faculty and modern facilities</li>
+            </ul>
+          </div>
+          <form class="form" onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+            <label>
+              Student Name
+              <input type="text" required />
+            </label>
+            <label>
+              Parent Name
+              <input type="text" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" required />
+            </label>
+            <label>
+              Class Applying For
+              <input type="text" required />
+            </label>
+            <button class="btn primary" type="submit">Submit Enquiry</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="gallery" class="section alt">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="grid three">
+            <div class="placeholder">Campus View</div>
+            <div class="placeholder">Classroom Activity</div>
+            <div class="placeholder">Annual Event</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> Add school address here</p>
+            <p><strong>Phone:</strong> Add contact number here</p>
+            <p><strong>Email:</strong> Add email address here</p>
+          </div>
+          <iframe
+            title="School Location"
+            src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Ekatva Public School. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
