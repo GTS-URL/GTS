@@ -3,6 +3,14 @@ const nav = document.querySelector('.site-nav');
 
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
