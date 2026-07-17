@@ -276,6 +276,7 @@ ul  { list-style: none; }
 .hero-bg {
   position: absolute;
   inset: 0;
+  background: var(--navy);
 }
 .hero-bg img {
   width: 100%;
@@ -392,6 +393,7 @@ ul  { list-style: none; }
   object-fit: cover;
   aspect-ratio: 4 / 5;
   box-shadow: var(--shadow-lg);
+  background: var(--cream-alt);
 }
 
 .about-badge {
@@ -621,6 +623,7 @@ ul  { list-style: none; }
   object-fit: cover;
   aspect-ratio: 4 / 5;
   box-shadow: var(--shadow-lg);
+  background: var(--cream-alt);
 }
 
 .campus-block {
@@ -775,6 +778,7 @@ input:focus, select:focus {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  background: var(--cream-alt);
 }
 .gallery-item:hover img { transform: scale(1.06); }
 
